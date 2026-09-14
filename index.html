@@ -3,67 +3,245 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>World GP – Privacy Policy</title>
+<title>World GP – Privacy Policy · Política de Privacidade</title>
 <style>
   body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1d1d1f; }
   h1 { font-size: 1.8em; } h2 { font-size: 1.2em; margin-top: 2em; }
   hr { border: 0; border-top: 1px solid #ddd; margin: 3em 0; }
   small { color: #666; }
+  nav { display: flex; gap: 10px; flex-wrap: wrap; }
+  nav a { padding: 4px 14px; border: 1px solid #ccc; border-radius: 999px; color: inherit; text-decoration: none; }
+  section { scroll-margin-top: 16px; }
+  .summary { background: #f5f5f7; border-radius: 10px; padding: 4px 20px; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.95em; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 10px 6px 0; border-bottom: 1px solid #e5e5e5; }
 </style>
 </head>
 <body>
+<nav>
+  <a href="#en" hreflang="en">English</a>
+  <a href="#pt" hreflang="pt-BR">Português</a>
+</nav>
+
+<section id="en" lang="en">
 <h1>World GP – Privacy Policy</h1>
-<p><small>Last updated: September 11, 2026</small></p>
+<p><small>Last updated: September 14, 2026</small></p>
 
-<p>World GP is an offline arcade racing game developed by Ari Carmo. This policy explains what the app does with your data. The short version: it collects nothing.</p>
+<p>World GP is a racing game for iPhone, iPad and Android developed by Ari Carmo ("we", "us"). This policy explains what data the game uses, why, who it is shared with and how you control it.</p>
 
-<h2>Data we collect</h2>
-<p>None. World GP does not collect, store, transmit or share any personal data. There is no account, no sign-in, no analytics, no advertising and no tracking of any kind.</p>
+<div class="summary">
+<h2>Summary</h2>
+<ul>
+  <li>We don't ask for your name, email, phone number or a login.</li>
+  <li>There is no advertising, tracking, analytics or sale of data.</li>
+  <li>Story mode, quick race and time attack work without an internet connection.</li>
+  <li>The <strong>world leaderboard</strong> uses a random install code, a nickname and your lap times. On first launch the game asks whether you want to take part, and you can turn sending off or erase your data in Settings at any time.</li>
+  <li><strong>Multiplayer</strong> only connects when you open the MULTIPLAYER screen. It uses your IP address, your nickname and your race inputs while you play, and it does not keep the race afterwards.</li>
+</ul>
+</div>
 
-<h2>Data stored on your device</h2>
-<p>The game saves your settings (sound, music, zoom) and your story progress locally on your device. This data never leaves your device and is deleted when you uninstall the app.</p>
+<h2>1. What stays on your device</h2>
+<p>Sound, music and zoom settings, story progress, personal records, the last downloaded copy of the leaderboard and lap times waiting for a connection to upload. These files never leave the device, except for leaderboard uploads described below, and they are deleted when you uninstall the game.</p>
 
-<h2>Network access</h2>
-<p>World GP does not connect to the internet. It works entirely offline.</p>
+<h2>2. World leaderboard</h2>
+<p><strong>What is sent</strong>, if you choose to take part:</p>
+<ul>
+  <li>A random install code, created by the game itself on first launch. It is not the device's advertising identifier (IDFA or AAID) and cannot recognize you in other apps.</li>
+  <li>A nickname: your public Game Center nickname (iPhone and iPad) or Google Play Games gamer name (Android), if you are signed in. Otherwise, a name picked by the game, such as "TIGRE 47". No one types a nickname in the game.</li>
+  <li>Your best lap times, with the track, mode, driver and team used, app version, operating system (iOS or Android) and date.</li>
+</ul>
+<p><strong>What we store:</strong> the items above, an internal player ID, the date the account was created, the last day the game was opened and, in case of cheating, a ban flag.</p>
+<p><strong>Who sees it:</strong> every player can see the nickname, times, driver and team on the leaderboard. The install code and internal player ID are never shown.</p>
+<p><strong>Why:</strong> to build each track's ranking, keep your times between sessions and remove impossible times and players who cheat.</p>
+<p><strong>Your control:</strong> in Settings you can turn off sending and erase your leaderboard account with all its times. With sending off, the game still downloads the public leaderboard to display it, without sending your install code or nickname.</p>
 
-<h2>Third-party services</h2>
-<p>The app does not include any third-party SDKs, advertising networks or analytics providers.</p>
+<h2>3. Multiplayer</h2>
+<p>The game only connects to the multiplayer server when you open the MULTIPLAYER screen.</p>
+<p><strong>What is used during a match:</strong></p>
+<ul>
+  <li>Your IP address and port, without which there is no connection.</li>
+  <li>Your nickname (the same as on the leaderboard), app version and operating system.</li>
+  <li>A reconnection code derived from the install code, so you can rejoin the same race if your connection drops.</li>
+  <li>The driver and livery you picked, whether you are ready, your ping and the inputs you give the car (steering, throttle and brake), with the positions that result from them.</li>
+</ul>
+<p><strong>Who sees it:</strong> other players in the room see your nickname, driver, livery, ping, track position and result. There is no chat or messaging between players.</p>
+<p><strong>What we store:</strong> the race is processed in memory and discarded when the room closes. The server keeps a technical log with nicknames and room events (joined, left, started, finished) to investigate failures and cheating, deleted within 30 days. IP addresses are not written to that log. Online races do not send times to the world leaderboard.</p>
+<p><strong>Why:</strong> to form rooms, run a fair race for everyone, reconnect players who drop and investigate problems.</p>
 
-<h2>Children</h2>
-<p>Because the app collects no data, it is safe for users of all ages.</p>
+<h2>4. Game Center and Google Play Games</h2>
+<p><strong>Game Center (iPhone and iPad).</strong> If you are signed in to Game Center, the game reads your public nickname and the identifier Apple assigns to you across our development team's games, and sends the leaderboard an Apple signature that proves that identity. Game Center is an Apple service governed by Apple's privacy policy. To avoid using it, sign out of Game Center in your device's Settings.</p>
+<p><strong>Google Play Games (Android).</strong> If you are signed in to Play Games, the game asks Google for a one-time code, and our leaderboard server exchanges it with Google for your Play Games player ID and gamer name. Play Games is a Google service governed by Google's privacy policy. To avoid using it, sign out of Play Games on your device.</p>
+<p>In both cases we do not receive your real name, email or friends list, and the nickname shown in the game is your public gamer name.</p>
 
-<h2>Changes</h2>
-<p>If this policy ever changes, the updated version will be published at this address with a new date.</p>
+<h2>5. What we don't do</h2>
+<p>We don't collect your real name, email, phone number, contacts, photos, audio, location or advertising identifier. We don't show ads, don't use third-party analytics or tracking tools, don't sell or rent data and don't build profiles of anyone.</p>
 
-<h2>Contact</h2>
-<p>Questions about this policy: <a href="mailto:arilsonkarmo@gmail.com">arilsonkarmo@gmail.com</a></p>
+<h2>6. Who we share data with</h2>
+<p>We use service providers that process data on our behalf, only to run the game:</p>
+<div class="table">
+<table>
+  <tr><th>Provider</th><th>Purpose</th><th>Location</th></tr>
+  <tr><td>Cloudflare, Inc.</td><td>Hosts the world leaderboard. Receives the IP address of each connection to deliver the response</td><td>Global network</td></tr>
+  <tr><td>Locaweb</td><td>Hosts the multiplayer server</td><td>São Paulo, Brazil</td></tr>
+  <tr><td>Apple</td><td>Game Center, on iPhone and iPad</td><td>As determined by Apple</td></tr>
+  <tr><td>Google</td><td>Play Games, on Android</td><td>As determined by Google</td></tr>
+</table>
+</div>
+<p>The App Store and Google Play handle download data under their own policies. We may also disclose data when required by law or court order.</p>
+
+<h2>7. International transfers</h2>
+<p>The multiplayer server is in Brazil. Cloudflare's network operates in many countries and may process leaderboard data outside your country. Those transfers rely on the contractual safeguards offered by the provider, as allowed by Brazil's General Data Protection Law (LGPD, art. 33) and the GDPR.</p>
+
+<h2>8. Legal bases</h2>
+<ul>
+  <li><strong>Providing the service you requested</strong> (LGPD art. 7, V; GDPR art. 6(1)(b)): world leaderboard and multiplayer.</li>
+  <li><strong>Legitimate interests</strong> (LGPD art. 7, IX; GDPR art. 6(1)(f)): technical logs, cheat prevention and security.</li>
+  <li><strong>Legal obligations</strong> (LGPD art. 7, II; GDPR art. 6(1)(c)), where applicable.</li>
+</ul>
+
+<h2>9. How long we keep data</h2>
+<div class="table">
+<table>
+  <tr><th>Data</th><th>Retention</th></tr>
+  <tr><td>Files on your device</td><td>Until you uninstall the game</td></tr>
+  <tr><td>Leaderboard account and times</td><td>While the account exists. Erasing it in Settings removes everything immediately; database recovery copies expire within 30 days</td></tr>
+  <tr><td>Online race data</td><td>Until the room closes</td></tr>
+  <tr><td>Multiplayer technical log</td><td>Up to 30 days</td></tr>
+</table>
+</div>
+
+<h2>10. Your rights</h2>
+<p>Under the LGPD (art. 18) and, if you are in the European Union or the United Kingdom, the GDPR, you can request confirmation of and access to your data, correction, deletion, portability, information about who we share it with, and object to processing.</p>
+<ul>
+  <li><strong>In the game:</strong> Settings → turn off sending your times or erase your leaderboard data.</li>
+  <li><strong>By email:</strong> <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>. Because the game has no email-based account, tell us the nickname shown on the leaderboard so we can find your data. We reply within 15 days.</li>
+  <li><strong>Complaints:</strong> you can contact Brazil's National Data Protection Authority (ANPD) at <a href="https://www.gov.br/anpd">gov.br/anpd</a>, or the data protection authority in your country.</li>
+</ul>
+
+<h2>11. Children and teens</h2>
+<p>The game does not ask for age and treats everyone's data in the same minimal way described here. There is no chat, free text, purchases or loot boxes, and nicknames come from our own list or from Game Center and Play Games, which follow Apple's and Google's rules. Taking part in the leaderboard is a choice made on first launch and can be undone in Settings. If you are a parent or guardian and want a child's data erased, use Settings on their device or write to <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>.</p>
+
+<h2>12. Security</h2>
+<p>The leaderboard uses HTTPS and a signed access token that expires after 90 days; there is no password to leak. Multiplayer traffic carries only your nickname and race data. Server access is restricted by key and firewall. No system is completely secure: if an incident may put you at risk, we will notify the ANPD and affected players as the law requires.</p>
+
+<h2>13. Changes to this policy</h2>
+<p>When we change something significant, we will tell you in the game or on the store page, and the date at the top of this page will change too.</p>
+
+<h2>14. Contact</h2>
+<p>Data controller: Ari Carmo<br>
+Privacy contact: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a></p>
+</section>
 
 <hr>
 
+<section id="pt" lang="pt-BR">
 <h1>World GP – Política de Privacidade</h1>
-<p><small>Última atualização: 11 de setembro de 2026</small></p>
+<p><small>Última atualização: 14 de setembro de 2026</small></p>
 
-<p>World GP é um jogo de corrida arcade offline desenvolvido por Ari Carmo. Esta política explica o que o app faz com seus dados. Resumindo: ele não coleta nada.</p>
+<p>O World GP é um jogo de corrida para iPhone, iPad e Android desenvolvido por Ari Carmo ("nós"). Esta política explica quais dados o jogo usa, para quê, com quem eles são compartilhados e como você controla tudo isso.</p>
 
-<h2>Dados que coletamos</h2>
-<p>Nenhum. O World GP não coleta, armazena, transmite nem compartilha dados pessoais. Não há conta, login, analytics, publicidade nem rastreamento de qualquer tipo.</p>
+<div class="summary">
+<h2>Resumo</h2>
+<ul>
+  <li>Não pedimos nome, e-mail, telefone nem login.</li>
+  <li>Não há anúncios, rastreamento, ferramentas de análise nem venda de dados.</li>
+  <li>Modo história, corrida rápida e contra o relógio funcionam sem internet.</li>
+  <li>O <strong>placar mundial</strong> usa um código aleatório da instalação, um apelido e seus tempos de volta. Na primeira abertura o jogo pergunta se você quer participar, e em Configurações você desliga o envio ou apaga seus dados quando quiser.</li>
+  <li>O <strong>multijogador</strong> só se conecta quando você abre a tela MULTIJOGADOR. Ele usa seu endereço IP, seu apelido e os comandos da corrida enquanto você joga, e não guarda a corrida depois.</li>
+</ul>
+</div>
 
-<h2>Dados guardados no seu aparelho</h2>
-<p>O jogo salva suas configurações (som, música, zoom) e o progresso da história localmente no aparelho. Esses dados nunca saem do aparelho e são apagados quando você desinstala o app.</p>
+<h2>1. O que fica só no seu aparelho</h2>
+<p>Configurações de som, música e zoom, progresso da história, recordes pessoais, a última cópia do placar baixada e os tempos esperando conexão para subir. Esses arquivos não saem do aparelho, a não ser pelo envio ao placar descrito abaixo, e são apagados quando você desinstala o jogo.</p>
 
-<h2>Acesso à rede</h2>
-<p>O World GP não se conecta à internet. Funciona totalmente offline.</p>
+<h2>2. Placar mundial</h2>
+<p><strong>O que é enviado</strong>, se você escolher participar:</p>
+<ul>
+  <li>Um código de instalação aleatório, criado pelo próprio jogo na primeira abertura. Não é o identificador de publicidade do aparelho (IDFA ou AAID) e não reconhece você em outros apps.</li>
+  <li>Um apelido: o apelido público do Game Center (iPhone e iPad) ou o nome de jogador do Google Play Games (Android), se você estiver conectado. Nos outros casos, um nome sorteado pelo jogo, como "TIGRE 47". Ninguém digita apelido no jogo.</li>
+  <li>Seus melhores tempos de volta, com pista, modo, piloto e equipe usados, versão do app, sistema (iOS ou Android) e data.</li>
+</ul>
+<p><strong>O que guardamos:</strong> os itens acima, um identificador interno de jogador, a data em que a conta foi criada, o último dia em que o jogo abriu e, em caso de trapaça, a marcação de bloqueio.</p>
+<p><strong>Quem vê:</strong> qualquer jogador vê no placar o apelido, os tempos, o piloto e a equipe. O código de instalação e o identificador interno nunca aparecem.</p>
+<p><strong>Para quê:</strong> montar o ranking de cada pista, manter seus tempos entre uma abertura e outra e remover tempos impossíveis e jogadores que trapaceiam.</p>
+<p><strong>Seu controle:</strong> em Configurações você desliga o envio e apaga sua conta do placar com todos os tempos. Com o envio desligado o jogo ainda baixa o placar público para mostrar na tela, sem enviar seu código nem seu apelido.</p>
 
-<h2>Serviços de terceiros</h2>
-<p>O app não inclui SDKs de terceiros, redes de anúncios nem provedores de analytics.</p>
+<h2>3. Multijogador</h2>
+<p>O jogo só se conecta ao servidor de multijogador quando você abre a tela MULTIJOGADOR.</p>
+<p><strong>O que é usado durante a partida:</strong></p>
+<ul>
+  <li>Seu endereço IP e porta, sem os quais não há conexão.</li>
+  <li>Seu apelido (o mesmo do placar), a versão do app e o sistema.</li>
+  <li>Um código de reconexão derivado do código de instalação, para você voltar à mesma corrida se a conexão cair.</li>
+  <li>Piloto e pintura escolhidos, se você está pronto, seu ping e os comandos que você dá ao carro (direção, acelerador e freio), com as posições que resultam deles.</li>
+</ul>
+<p><strong>Quem vê:</strong> os outros jogadores da sala veem seu apelido, piloto, pintura, ping, posição na pista e resultado. Não há chat nem mensagens entre jogadores.</p>
+<p><strong>O que guardamos:</strong> a corrida é processada em memória e descartada quando a sala fecha. O servidor mantém um registro técnico com apelidos e eventos de sala (entrou, saiu, largou, terminou) para investigar falhas e trapaça, apagado em até 30 dias. O endereço IP não entra nesse registro. Corridas online não mandam tempos para o placar mundial.</p>
+<p><strong>Para quê:</strong> formar salas, rodar a corrida de forma justa para todos, reconectar quem caiu e investigar problemas.</p>
 
-<h2>Crianças</h2>
-<p>Como o app não coleta dados, é seguro para usuários de todas as idades.</p>
+<h2>4. Game Center e Google Play Games</h2>
+<p><strong>Game Center (iPhone e iPad).</strong> Se você estiver conectado ao Game Center, o jogo lê seu apelido público e o identificador que a Apple atribui a você nos jogos do nosso time de desenvolvimento, e envia ao placar uma assinatura da Apple que comprova essa identidade. O Game Center é um serviço da Apple, regido pela política de privacidade da Apple. Para não usá-lo, desconecte o Game Center nos Ajustes do aparelho.</p>
+<p><strong>Google Play Games (Android).</strong> Se você estiver conectado ao Play Games, o jogo pede ao Google um código de uso único, e o servidor do placar troca esse código com o Google pelo seu identificador e pelo seu nome de jogador do Play Games. O Play Games é um serviço do Google, regido pela política de privacidade do Google. Para não usá-lo, desconecte o Play Games no aparelho.</p>
+<p>Nos dois casos não recebemos seu nome real, e-mail nem lista de amigos, e o apelido que aparece no jogo é o seu nome público de jogador.</p>
 
-<h2>Alterações</h2>
-<p>Se esta política mudar, a versão atualizada será publicada neste endereço com nova data.</p>
+<h2>5. O que não fazemos</h2>
+<p>Não coletamos nome real, e-mail, telefone, contatos, fotos, áudio, localização nem identificador de publicidade. Não exibimos anúncios, não usamos ferramentas de análise ou rastreamento de terceiros, não vendemos nem alugamos dados e não montamos perfil de ninguém.</p>
 
-<h2>Contato</h2>
-<p>Dúvidas sobre esta política: <a href="mailto:arilsonkarmo@gmail.com">arilsonkarmo@gmail.com</a></p>
+<h2>6. Com quem compartilhamos</h2>
+<p>Usamos fornecedores que tratam dados em nosso nome, só para operar o jogo:</p>
+<div class="table">
+<table>
+  <tr><th>Fornecedor</th><th>Para quê</th><th>Onde</th></tr>
+  <tr><td>Cloudflare, Inc.</td><td>Hospeda o placar mundial. Recebe o endereço IP de cada conexão para entregar a resposta</td><td>Rede global</td></tr>
+  <tr><td>Locaweb</td><td>Hospeda o servidor de multijogador</td><td>São Paulo, Brasil</td></tr>
+  <tr><td>Apple</td><td>Game Center, no iPhone e no iPad</td><td>Conforme a Apple</td></tr>
+  <tr><td>Google</td><td>Play Games, no Android</td><td>Conforme o Google</td></tr>
+</table>
+</div>
+<p>A App Store e o Google Play tratam os dados de download conforme as políticas deles. Também podemos divulgar dados quando uma lei ou ordem judicial exigir.</p>
+
+<h2>7. Transferência internacional</h2>
+<p>O servidor de multijogador fica no Brasil. A rede da Cloudflare opera em vários países e pode tratar os dados do placar fora do Brasil. Nesse caso a transferência se apoia nas garantias contratuais oferecidas pelo fornecedor, conforme o art. 33 da Lei Geral de Proteção de Dados (LGPD).</p>
+
+<h2>8. Bases legais</h2>
+<ul>
+  <li><strong>Execução do serviço que você pediu</strong> (LGPD art. 7º, V; GDPR art. 6(1)(b)): placar mundial e multijogador.</li>
+  <li><strong>Legítimo interesse</strong> (LGPD art. 7º, IX; GDPR art. 6(1)(f)): registro técnico, prevenção de trapaça e segurança.</li>
+  <li><strong>Cumprimento de obrigação legal</strong> (LGPD art. 7º, II; GDPR art. 6(1)(c)), quando houver.</li>
+</ul>
+
+<h2>9. Por quanto tempo guardamos</h2>
+<div class="table">
+<table>
+  <tr><th>Dado</th><th>Prazo</th></tr>
+  <tr><td>Arquivos no aparelho</td><td>Até você desinstalar o jogo</td></tr>
+  <tr><td>Conta e tempos do placar</td><td>Enquanto a conta existir. Apagar em Configurações remove tudo na hora; as cópias de recuperação do banco somem em até 30 dias</td></tr>
+  <tr><td>Dados da corrida online</td><td>Até a sala fechar</td></tr>
+  <tr><td>Registro técnico do multijogador</td><td>Até 30 dias</td></tr>
+</table>
+</div>
+
+<h2>10. Seus direitos</h2>
+<p>Pela LGPD (art. 18) e, se você estiver na União Europeia ou no Reino Unido, pelo GDPR, você pode pedir confirmação e acesso aos seus dados, correção, eliminação, portabilidade, informação sobre com quem compartilhamos e se opor a um tratamento.</p>
+<ul>
+  <li><strong>No jogo:</strong> Configurações → desligar o envio dos tempos ou apagar seus dados do placar.</li>
+  <li><strong>Por e-mail:</strong> <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>. Como o jogo não tem conta com e-mail, diga o apelido que aparece no placar para localizarmos seus dados. Respondemos em até 15 dias.</li>
+  <li><strong>Reclamação:</strong> você pode recorrer à Autoridade Nacional de Proteção de Dados (ANPD), em <a href="https://www.gov.br/anpd">gov.br/anpd</a>, ou à autoridade de proteção de dados do seu país.</li>
+</ul>
+
+<h2>11. Crianças e adolescentes</h2>
+<p>O jogo não pede idade e trata os dados de todos da mesma forma mínima descrita aqui. Não há chat, texto livre, compras nem caixas de recompensa, e o apelido vem de uma lista nossa ou do Game Center e do Play Games, que seguem as regras da Apple e do Google. A participação no placar é uma escolha feita na primeira abertura e pode ser desfeita em Configurações. Se você é responsável por uma criança ou adolescente e quer apagar os dados dela, use Configurações no aparelho dela ou escreva para <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>.</p>
+
+<h2>12. Segurança</h2>
+<p>O placar usa HTTPS e uma ficha de acesso assinada que expira em 90 dias; não existe senha para vazar. O tráfego do multijogador leva só o apelido e os dados da corrida. O acesso aos servidores é restrito por chave e firewall. Nenhum sistema é totalmente seguro: se houver um incidente que possa causar risco a você, avisaremos a ANPD e os afetados como a lei manda.</p>
+
+<h2>13. Mudanças nesta política</h2>
+<p>Quando mudarmos algo relevante, avisaremos no jogo ou na página da loja, e a data no topo desta página muda junto.</p>
+
+<h2>14. Contato</h2>
+<p>Responsável pelo tratamento: Ari Carmo<br>
+Canal de privacidade: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a></p>
+</section>
 </body>
 </html>
