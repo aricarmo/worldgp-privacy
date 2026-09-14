@@ -36,7 +36,7 @@
   <li>We don't ask for your name, email, phone number or a login.</li>
   <li>There is no advertising, tracking, analytics or sale of data.</li>
   <li>Story mode, quick race and time attack work without an internet connection.</li>
-  <li>The <strong>world leaderboard</strong> uses a random install code, a nickname and your lap times. On first launch the game asks whether you want to take part, and you can turn sending off or erase your data in Settings at any time.</li>
+  <li>The <strong>world leaderboard</strong> uses a random install code, a nickname and your lap times. The leaderboard is enabled by default, without a participation prompt when the game opens. You can erase your account and times in Settings → Delete my ranking. After deletion, new times are no longer sent.</li>
   <li><strong>Multiplayer</strong> only connects when you open the MULTIPLAYER screen. It uses your IP address, your nickname and your race inputs while you play, and it does not keep the race afterwards.</li>
 </ul>
 </div>
@@ -45,7 +45,7 @@
 <p>Sound, music and zoom settings, story progress, personal records, the last downloaded copy of the leaderboard and lap times waiting for a connection to upload. These files never leave the device, except for leaderboard uploads described below, and they are deleted when you uninstall the game.</p>
 
 <h2>2. World leaderboard</h2>
-<p><strong>What is sent</strong>, if you choose to take part:</p>
+<p><strong>What is sent</strong> while the leaderboard is enabled:</p>
 <ul>
   <li>A random install code, created by the game itself on first launch. It is not the device's advertising identifier (IDFA or AAID) and cannot recognize you in other apps.</li>
   <li>A nickname: your public Game Center nickname (iPhone and iPad) or Google Play Games gamer name (Android), if you are signed in. Otherwise, a name picked by the game, such as "TIGRE 47". No one types a nickname in the game.</li>
@@ -54,7 +54,7 @@
 <p><strong>What we store:</strong> the items above, an internal player ID, the date the account was created, the last day the game was opened and, in case of cheating, a ban flag.</p>
 <p><strong>Who sees it:</strong> every player can see the nickname, times, driver and team on the leaderboard. The install code and internal player ID are never shown.</p>
 <p><strong>Why:</strong> to build each track's ranking, keep your times between sessions and remove impossible times and players who cheat.</p>
-<p><strong>Your control:</strong> in Settings you can turn off sending and erase your leaderboard account with all its times. With sending off, the game still downloads the public leaderboard to display it, without sending your install code or nickname.</p>
+<p><strong>Your control:</strong> Settings → Delete my ranking lets you erase your leaderboard account and all its times, after confirmation. Deletion requires an internet connection. The game confirms success only after the server confirms deletion; if it fails, you can try again. Local records and story progress are kept. Sending remains disabled after deletion, including when the game is reopened, so your account is not recreated automatically. The public leaderboard remains available without sending your install code or nickname. There is no separate switch for enabling or disabling participation in Settings; an explicit opt-out saved by a previous version remains respected.</p>
 
 <h2>3. Multiplayer</h2>
 <p>The game only connects to the multiplayer server when you open the MULTIPLAYER screen.</p>
@@ -105,7 +105,7 @@
 <table>
   <tr><th>Data</th><th>Retention</th></tr>
   <tr><td>Files on your device</td><td>Until you uninstall the game</td></tr>
-  <tr><td>Leaderboard account and times</td><td>While the account exists. Erasing it in Settings removes everything immediately; database recovery copies expire within 30 days</td></tr>
+  <tr><td>Leaderboard account and times</td><td>While the account exists. After the server confirms deletion requested in Settings, the account and times are removed; database recovery copies expire within 30 days</td></tr>
   <tr><td>Online race data</td><td>Until the room closes</td></tr>
   <tr><td>Multiplayer technical log</td><td>Up to 30 days</td></tr>
 </table>
@@ -114,13 +114,13 @@
 <h2>10. Your rights</h2>
 <p>Under the LGPD (art. 18) and, if you are in the European Union or the United Kingdom, the GDPR, you can request confirmation of and access to your data, correction, deletion, portability, information about who we share it with, and object to processing.</p>
 <ul>
-  <li><strong>In the game:</strong> Settings → turn off sending your times or erase your leaderboard data.</li>
+  <li><strong>In the game:</strong> Settings → Delete my ranking.</li>
   <li><strong>By email:</strong> <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>. Because the game has no email-based account, tell us the nickname shown on the leaderboard so we can find your data. We reply within 15 days.</li>
   <li><strong>Complaints:</strong> you can contact Brazil's National Data Protection Authority (ANPD) at <a href="https://www.gov.br/anpd">gov.br/anpd</a>, or the data protection authority in your country.</li>
 </ul>
 
 <h2>11. Children and teens</h2>
-<p>The game does not ask for age and treats everyone's data in the same minimal way described here. There is no chat, free text, purchases or loot boxes, and nicknames come from our own list or from Game Center and Play Games, which follow Apple's and Google's rules. Taking part in the leaderboard is a choice made on first launch and can be undone in Settings. If you are a parent or guardian and want a child's data erased, use Settings on their device or write to <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>.</p>
+<p>The game does not ask for age and treats everyone's data in the same minimal way described here. There is no chat, free text, purchases or loot boxes, and nicknames come from our own list or from Game Center and Play Games, which follow Apple's and Google's rules. The leaderboard is enabled by default. Settings → Delete my ranking removes the account and times and stops further uploads. If you are a parent or guardian and want a child's data erased, use Settings on their device or write to <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>.</p>
 
 <h2>12. Security</h2>
 <p>The leaderboard uses HTTPS and a signed access token that expires after 90 days; there is no password to leak. Multiplayer traffic carries only your nickname and race data. Server access is restricted by key and firewall. No system is completely secure: if an incident may put you at risk, we will notify the ANPD and affected players as the law requires.</p>
@@ -147,7 +147,7 @@ Privacy contact: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a><
   <li>Não pedimos nome, e-mail, telefone nem login.</li>
   <li>Não há anúncios, rastreamento, ferramentas de análise nem venda de dados.</li>
   <li>Modo história, corrida rápida e contra o relógio funcionam sem internet.</li>
-  <li>O <strong>placar mundial</strong> usa um código aleatório da instalação, um apelido e seus tempos de volta. Na primeira abertura o jogo pergunta se você quer participar, e em Configurações você desliga o envio ou apaga seus dados quando quiser.</li>
+  <li>O <strong>placar mundial</strong> usa um código aleatório da instalação, um apelido e seus tempos de volta. O placar fica ativo por padrão, sem pergunta de participação ao abrir o jogo. Você pode apagar sua conta e seus tempos em Configurações → Excluir meu ranking. Após a exclusão, novos tempos deixam de ser enviados.</li>
   <li>O <strong>multijogador</strong> só se conecta quando você abre a tela MULTIJOGADOR. Ele usa seu endereço IP, seu apelido e os comandos da corrida enquanto você joga, e não guarda a corrida depois.</li>
 </ul>
 </div>
@@ -156,7 +156,7 @@ Privacy contact: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a><
 <p>Configurações de som, música e zoom, progresso da história, recordes pessoais, a última cópia do placar baixada e os tempos esperando conexão para subir. Esses arquivos não saem do aparelho, a não ser pelo envio ao placar descrito abaixo, e são apagados quando você desinstala o jogo.</p>
 
 <h2>2. Placar mundial</h2>
-<p><strong>O que é enviado</strong>, se você escolher participar:</p>
+<p><strong>O que é enviado</strong> enquanto o placar está ativo:</p>
 <ul>
   <li>Um código de instalação aleatório, criado pelo próprio jogo na primeira abertura. Não é o identificador de publicidade do aparelho (IDFA ou AAID) e não reconhece você em outros apps.</li>
   <li>Um apelido: o apelido público do Game Center (iPhone e iPad) ou o nome de jogador do Google Play Games (Android), se você estiver conectado. Nos outros casos, um nome sorteado pelo jogo, como "TIGRE 47". Ninguém digita apelido no jogo.</li>
@@ -165,7 +165,7 @@ Privacy contact: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a><
 <p><strong>O que guardamos:</strong> os itens acima, um identificador interno de jogador, a data em que a conta foi criada, o último dia em que o jogo abriu e, em caso de trapaça, a marcação de bloqueio.</p>
 <p><strong>Quem vê:</strong> qualquer jogador vê no placar o apelido, os tempos, o piloto e a equipe. O código de instalação e o identificador interno nunca aparecem.</p>
 <p><strong>Para quê:</strong> montar o ranking de cada pista, manter seus tempos entre uma abertura e outra e remover tempos impossíveis e jogadores que trapaceiam.</p>
-<p><strong>Seu controle:</strong> em Configurações você desliga o envio e apaga sua conta do placar com todos os tempos. Com o envio desligado o jogo ainda baixa o placar público para mostrar na tela, sem enviar seu código nem seu apelido.</p>
+<p><strong>Seu controle:</strong> Configurações → Excluir meu ranking permite apagar sua conta do placar e todos os tempos, após confirmação. A exclusão exige conexão com a internet. O jogo só informa sucesso depois da confirmação do servidor; em caso de falha, você pode tentar novamente. Os recordes locais e o progresso da história são mantidos. Após excluir, o envio permanece desligado, inclusive ao reabrir o jogo, para não recriar a conta automaticamente. O placar público continua disponível sem enviar seu código de instalação nem seu apelido. Não há um botão separado para ativar ou desativar a participação nas Configurações; uma recusa explícita salva por uma versão anterior continua respeitada.</p>
 
 <h2>3. Multijogador</h2>
 <p>O jogo só se conecta ao servidor de multijogador quando você abre a tela MULTIJOGADOR.</p>
@@ -216,7 +216,7 @@ Privacy contact: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a><
 <table>
   <tr><th>Dado</th><th>Prazo</th></tr>
   <tr><td>Arquivos no aparelho</td><td>Até você desinstalar o jogo</td></tr>
-  <tr><td>Conta e tempos do placar</td><td>Enquanto a conta existir. Apagar em Configurações remove tudo na hora; as cópias de recuperação do banco somem em até 30 dias</td></tr>
+  <tr><td>Conta e tempos do placar</td><td>Enquanto a conta existir. Após o servidor confirmar a exclusão solicitada nas Configurações, a conta e os tempos são removidos; as cópias de recuperação do banco somem em até 30 dias</td></tr>
   <tr><td>Dados da corrida online</td><td>Até a sala fechar</td></tr>
   <tr><td>Registro técnico do multijogador</td><td>Até 30 dias</td></tr>
 </table>
@@ -225,13 +225,13 @@ Privacy contact: <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a><
 <h2>10. Seus direitos</h2>
 <p>Pela LGPD (art. 18) e, se você estiver na União Europeia ou no Reino Unido, pelo GDPR, você pode pedir confirmação e acesso aos seus dados, correção, eliminação, portabilidade, informação sobre com quem compartilhamos e se opor a um tratamento.</p>
 <ul>
-  <li><strong>No jogo:</strong> Configurações → desligar o envio dos tempos ou apagar seus dados do placar.</li>
+  <li><strong>No jogo:</strong> Configurações → Excluir meu ranking.</li>
   <li><strong>Por e-mail:</strong> <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>. Como o jogo não tem conta com e-mail, diga o apelido que aparece no placar para localizarmos seus dados. Respondemos em até 15 dias.</li>
   <li><strong>Reclamação:</strong> você pode recorrer à Autoridade Nacional de Proteção de Dados (ANPD), em <a href="https://www.gov.br/anpd">gov.br/anpd</a>, ou à autoridade de proteção de dados do seu país.</li>
 </ul>
 
 <h2>11. Crianças e adolescentes</h2>
-<p>O jogo não pede idade e trata os dados de todos da mesma forma mínima descrita aqui. Não há chat, texto livre, compras nem caixas de recompensa, e o apelido vem de uma lista nossa ou do Game Center e do Play Games, que seguem as regras da Apple e do Google. A participação no placar é uma escolha feita na primeira abertura e pode ser desfeita em Configurações. Se você é responsável por uma criança ou adolescente e quer apagar os dados dela, use Configurações no aparelho dela ou escreva para <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>.</p>
+<p>O jogo não pede idade e trata os dados de todos da mesma forma mínima descrita aqui. Não há chat, texto livre, compras nem caixas de recompensa, e o apelido vem de uma lista nossa ou do Game Center e do Play Games, que seguem as regras da Apple e do Google. O placar fica ativo por padrão. Configurações → Excluir meu ranking remove a conta e os tempos e interrompe novos envios. Se você é responsável por uma criança ou adolescente e quer apagar os dados dela, use Configurações no aparelho dela ou escreva para <a href="mailto:aricarmo@outlook.com">aricarmo@outlook.com</a>.</p>
 
 <h2>12. Segurança</h2>
 <p>O placar usa HTTPS e uma ficha de acesso assinada que expira em 90 dias; não existe senha para vazar. O tráfego do multijogador leva só o apelido e os dados da corrida. O acesso aos servidores é restrito por chave e firewall. Nenhum sistema é totalmente seguro: se houver um incidente que possa causar risco a você, avisaremos a ANPD e os afetados como a lei manda.</p>
